@@ -1,0 +1,38 @@
+function makevisible() {
+	var checked1 = document.getElementById('database_world').checked;
+	if(checked1 == true)
+	{
+		document.getElementById('legend_world').style.display = "block";
+		document.getElementById('username').value = "traveller";
+		document.getElementById('password').value = "packmybags";
+	}
+	else
+		document.getElementById('legend_world').style.display = "none";
+
+	var checked2 = document.getElementById('database_simpsons').checked;
+	if(checked2 == true)
+	{
+		document.getElementById('legend_simpsons').style.display = "block";
+		document.getElementById('username').value = "homer";
+		document.getElementById('password').value = "d0ughnut";
+	}
+	else
+		document.getElementById('legend_simpsons').style.display = "none";
+
+	var checked3 = document.getElementById('database_imdb_small').checked;
+	if(checked3 == true)
+	{
+		document.getElementById('legend_imdb_small').style.display = "block";
+		document.getElementById('username').value = "siskel";
+		document.getElementById('password').value = "2thumbsup";
+	}
+	else
+		document.getElementById('legend_imdb_small').style.display = "none";
+
+	if(document.getElementById('database_other').checked == true)
+	{
+		document.getElementById('username').value = "";
+		document.getElementById('password').value = "";
+	}
+
+}
